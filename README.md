@@ -24,7 +24,7 @@ To get started with the Weather Application, follow these steps:
 1. Clone the repository to your local machine using the following command:
 
     ```
-    git clone https://[github.com/your-username/weather-application.git](https://github.com/kartikkesbhat-2003/Weather-Application)
+    git clone https://https://github.com/kartikkesbhat-2003/Weather-Application.git
     ```
 
 2. Navigate to the project directory:
