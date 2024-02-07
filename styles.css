@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+} 
+
+body{
+    background-image: linear-gradient(-135deg, rgb(43, 49, 141), rgb(135, 130, 210));
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Merriweather Sans", sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.tab {
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 5px 8px;
+    letter-spacing: 1.75px;
+}
+
+.tab.currentTab {
+    background-color: rgba(255, 255, 255, 0.357);
+    border-radius: 5px;
+}
+
+.weather-container { 
+    margin-block: 4rem;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grant-location-container {
+    display: none;
+}
+
+.grant-location-container.active {
+    display: flex;
+}
+
+.grant-location-container img {
+    max-width: 80px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.grant-location-container p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    all: unset;
+    font-size: 0.85rem;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #505aa0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.loading-container {
+    display: none;
+    margin: 0 auto;
+}
+
+.loading-container.active {
+    display: flex;
+    margin: 0 auto
+}
+
+.loading container p {
+    text-transform: uppercase;
+}
+
+.userInfo-container {
+    display: none;
+}
+
+.userInfo-container.active {
+    display: flex;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.name p {
+    font-size: 2rem;
+}
+
+.userInfo-container p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.userInfo-container img {
+    width: 90px; 
+    height: 90px;
+}
+
+.name img {
+    width: 30px;
+    height: 20px;
+}
+
+.userInfo-container p[data-temp] {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.parameter-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px 20px;
+    align-items: center;
+    margin-top: 2rem; 
+}
+
+.parameter {
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.463);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    align-items: center;
+}
+
+.parameter img {
+    width: 50px;
+    height: 50px;
+}
+
+.parameter p:first-of-type {
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.parameter p:last-of-type {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.form-container {
+    display: none;
+    /* display: flex; */
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+.form-container.active {
+    display: flex;
+}
+
+.form-container input {
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.396) ;
+    border-radius: 10px;
+}
+
+.form-container input::placeholder {
+    color: rgba(255, 255, 255, 0.545);
+}
+
+.form-container input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container button {
+    padding: unset;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
